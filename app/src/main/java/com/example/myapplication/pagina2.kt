@@ -1,6 +1,8 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,15 @@ class pagina2 : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val imgAndroid = findViewById<ImageView>(R.id.imgAndroid)
+        val imgIos = findViewById<ImageView>(R.id.imgIos)
+        imgAndroid.setOnClickListener {
+            Toast.makeText(this, "Elegiste Android", Toast.LENGTH_SHORT).show()
+        }
+
+        imgIos.setOnClickListener {
+            Toast.makeText(this, "Elegiste iOS", Toast.LENGTH_SHORT).show()
         }
     }
 }
