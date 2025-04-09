@@ -55,5 +55,61 @@
         app:layout_constraintHorizontal_bias="0.742"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="148dp" />
+
     </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="239dp"
+        android:layout_height="42dp"
+        android:text="Programación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="239dp"
+        android:layout_height="42dp"
+        android:text="Redes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="239dp"
+        android:layout_height="42dp"
+        android:text="Seguridad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="239dp"
+        android:layout_height="42dp"
+        android:text="Hardware"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton6"
+        android:layout_width="239dp"
+        android:layout_height="42dp"
+        android:text="Otra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="139dp"
+        android:layout_height="36dp"
+        android:text="Preferencias:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="249dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
