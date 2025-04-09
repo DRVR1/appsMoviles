@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val etUsername = findViewById<EditText>(R.id.etUsername)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
-        val btnRegister = findViewById<Button>(R.id.btnRegister)
+        val btnRegister = findViewById<TextView>(R.id.textView3)
         btnRegister.setOnClickListener(){
             val intent = Intent(this, register::class.java)
             startActivity(intent)

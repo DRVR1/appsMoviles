@@ -24,39 +24,37 @@
 
     <EditText
         android:id="@+id/etUsername"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
         android:hint="Usuario"
         android:inputType="textPersonName"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
         android:layout_marginTop="32dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etUsername" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="252dp"
         android:text="Iniciar sesión"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPassword" />
 
@@ -65,8 +63,11 @@
         android:layout_width="118dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:gravity="center"
-        android:text="Registrarse"
+        android:outlineProvider="none"
+        android:text="@string/underlined_text"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
