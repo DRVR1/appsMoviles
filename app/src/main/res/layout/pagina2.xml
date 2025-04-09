@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="185dp"
-        android:layout_height="48dp"
+        android:layout_width="207dp"
+        android:layout_height="121dp"
         android:fontFamily="monospace"
-        android:text="PAGINA 2"
+        android:text="¡Bienvenido Juan Torres!"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             // Aquí podrías validar credenciales si querés
             //“Juan Torres” y la clave
             //"1234utn"
-            val usuario = arrayOf("juan", "utn1234")
+            val usuario = arrayOf("Juan Torres", "1234utn")
             if(usuario[0] == username && usuario[1] == password){
                 val intent = Intent(this, pagina2::class.java)
                 intent.putExtra("username", username)
