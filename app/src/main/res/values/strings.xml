@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="underlined_text"><u>Registrarse</u></string>
 </resources>
