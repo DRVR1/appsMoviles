@@ -22,10 +22,14 @@ class pagina2 : AppCompatActivity() {
         val imgIos = findViewById<ImageView>(R.id.imgIos)
         imgAndroid.setOnClickListener {
             Toast.makeText(this, "Elegiste Android", Toast.LENGTH_SHORT).show()
+            imgAndroid.setBackgroundResource(R.drawable.borde_seleccionado)
+            imgIos.setBackgroundResource(0)
         }
 
         imgIos.setOnClickListener {
             Toast.makeText(this, "Elegiste iOS", Toast.LENGTH_SHORT).show()
+            imgIos.setBackgroundResource(R.drawable.borde_seleccionado)
+            imgAndroid.setBackgroundResource(0)
         }
     }
 }
