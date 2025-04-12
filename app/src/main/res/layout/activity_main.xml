@@ -51,12 +51,13 @@
         android:layout_width="260dp"
         android:layout_height="60dp"
         android:layout_marginTop="252dp"
+        android:backgroundTint="@color/boton"
         android:text="Iniciar sesión"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@id/etPassword"/>
 
     <TextView
         android:id="@+id/textView3"

@@ -13,10 +13,10 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".register"
+            android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".pagina2"
+            android:name=".Bienvenida"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         val etUsername = findViewById<EditText>(R.id.etUsername)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
-        val btnRegister = findViewById<TextView>(R.id.textView3)
+        val btnRegister = findViewById<TextView>(R.id.textView3) // Boton de ir al formulario de registro
         btnRegister.setOnClickListener(){
-            val intent = Intent(this, register::class.java)
+            val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
 
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             //"1234utn"
             val usuario = arrayOf("Juan Torres", "1234utn")
             if(usuario[0] == username && usuario[1] == password){
-                val intent = Intent(this, pagina2::class.java)
+                val intent = Intent(this, Bienvenida::class.java)
                 intent.putExtra("username", username)
                 startActivity(intent)
             }else{
