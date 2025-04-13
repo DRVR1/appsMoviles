@@ -12,9 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
-        android:fontFamily="monospace"
         android:text="¡Bienvenido Juan Torres!"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,35 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView">
 
-        <ImageView
-            android:id="@+id/imgAndroid"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#F6F2F2"
-            android:clickable="true"
-            android:contentDescription="Logo Android"
-            android:focusable="true"
-            android:padding="8dp"
-            android:src="@drawable/android"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.254"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="148dp" />
 
-
-        <ImageView
-            android:id="@+id/imgIos"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:clickable="true"
-            android:contentDescription="Logo iOS"
-            android:focusable="true"
-            android:padding="8dp"
-            android:src="@drawable/ios"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.742"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="148dp" />
     </LinearLayout>
 
     <Button
@@ -67,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="salir"
+        android:text="Salir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
@@ -87,5 +59,38 @@
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgIos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="?attr/colorSurfaceVariant"
+        android:clickable="true"
+        android:contentDescription="Logo iOS"
+        android:focusable="true"
+        android:padding="8dp"
+        android:src="@drawable/ios"
+        android:tint="?attr/colorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageContainer" />
+
+    <ImageView
+        android:id="@+id/imgAndroid"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="?attr/colorSurfaceVariant"
+        android:clickable="true"
+        android:contentDescription="Logo Android"
+        android:focusable="true"
+        android:padding="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/android"
+        android:tint="?attr/colorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageContainer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
