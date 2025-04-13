@@ -1,12 +1,15 @@
 package com.example.myapplication
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Switch
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -40,5 +43,30 @@ class Bienvenida : AppCompatActivity() {
             startActivity(intent)
             finish() // Opcional: cierra la Activity actual para no acumularlas
         }
+
+        val btnToggleTheme = findViewById<Switch>(R.id.switch1)
+
+
+        //esto es para que siga apareciendo en switch de modo en la vista "logueada"
+        //no es optimo porque estoy duplicando codigo en sierta forma,
+        //segun el chat gpt  se puede crear un archivo .kt y llamarlo en donde quiero q aparesca
+
+        // Sincroniza el estado inicial del Switch con el tema actual
+        btnToggleTheme.isChecked = AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
+
+        // Listener para cambiar el tema (igual que en MainActivity)
+        btnToggleTheme.setOnCheckedChangeListener { _, isChecked ->
+            val newMode = if (isChecked) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+            AppCompatDelegate.setDefaultNightMode(newMode)
+            recreate()
+
+            // Opcional: Guardar preferencia para persistencia
+            getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
+                .edit()
+                .putInt("NightMode", newMode)
+                .apply()
+        }
+
+
     }
 }
