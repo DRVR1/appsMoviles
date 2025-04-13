@@ -3,4 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="boton">#084300</color>
+    <color name="background_color">#d2e9fa</color>
+    <color name="color_celeste">#00c6fc</color>
+    <color name="button_text">#FFFFFF</color>
 </resources>
