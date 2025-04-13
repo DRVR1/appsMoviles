@@ -73,6 +73,7 @@
         android:layout_width="260dp"
         android:layout_height="60dp"
         android:layout_marginTop="124dp"
+        android:textColor="@android:color/white"
         android:backgroundTint="@color/boton"
         android:text="Registrarse"
         android:textSize="20sp"
@@ -80,5 +81,14 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

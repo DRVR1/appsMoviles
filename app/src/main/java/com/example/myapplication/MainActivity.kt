@@ -4,10 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -52,7 +54,15 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
             }
         }
-
+        val btnToggleTheme = findViewById<Switch>(R.id.switch1)
+        btnToggleTheme.setOnClickListener {
+            if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
+            recreate() // Reinicia la Activity para aplicar cambios
+        }
 
     }
 }
