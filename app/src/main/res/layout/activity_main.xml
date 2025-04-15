@@ -30,13 +30,13 @@
         android:layout_width="118dp"
         android:layout_height="25dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:gravity="center"
         android:outlineProvider="none"
         android:text="@string/underlined_text"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <EditText
@@ -69,22 +69,24 @@
         android:id="@+id/btnLogin"
         android:layout_width="260dp"
         android:layout_height="60dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="212dp"
         android:backgroundTint="@color/boton"
-        android:textColor="@android:color/white"
         android:text="Iniciar sesión"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPassword"/>
+        app:layout_constraintTop_toBottomOf="@id/etPassword" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="modo"
+        android:textOn="🌙"
+        android:textOff="☀️"
+        android:showText="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Switch
 import android.widget.Toast
@@ -37,7 +38,7 @@ class Bienvenida : AppCompatActivity() {
             imgAndroid.setBackgroundResource(0)
         }
         //este boton es para "salir" de la vista iniciada de sesion
-        val btnBack = findViewById<Button>(R.id.btnBack)
+        val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
