@@ -64,5 +64,12 @@ class Register : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+        //agrego esto para volver al inicio de sesion
+        val btnBack = findViewById<Button>(R.id.btnBack)
+        btnBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish() // Opcional: cierra la Activity actual para no acumularlas
+        }
     }
 }
