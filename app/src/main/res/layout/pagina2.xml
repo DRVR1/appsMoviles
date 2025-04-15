@@ -43,7 +43,7 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Cerrar sesión"
         android:src="@drawable/baseline_logout_24"
-        android:tint="?attr/colorOnSurface"
+        app:tint="?attr/colorOnSurface"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/switch1"
         app:layout_constraintHorizontal_bias="0.055"
