@@ -55,20 +55,20 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="88dp"
         android:clickable="true"
         android:contentDescription="Logo iOS"
         android:focusable="true"
         android:padding="8dp"
         android:src="@drawable/ios"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAndroid"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/imgAndroid"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="44dp"
         android:clickable="true"
         android:contentDescription="Logo Android"
@@ -76,8 +76,6 @@
         android:padding="8dp"
         android:scaleType="centerInside"
         android:src="@drawable/android"
-        app:layout_constraintEnd_toStartOf="@+id/imgIos"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -87,6 +85,18 @@
         android:layout_height="36dp"
         android:gravity="center"
         android:text="Preferencias"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIos" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="263dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Selecciona tu plataforma"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imgAndroid"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,9 +108,10 @@
         android:layout_height="255dp"
         app:layout_constraintBottom_toTopOf="@+id/LabelEspecifique"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgIos">
+        app:layout_constraintTop_toBottomOf="@+id/imgIos"
+        app:layout_constraintVertical_bias="1.0">
 
         <RadioButton
             android:id="@+id/radioButton5"
@@ -117,7 +128,8 @@
             android:id="@+id/radioButton2"
             android:layout_width="300dp"
             android:layout_height="42dp"
-            android:text="Programación" />
+            android:text="Programación"
+            android:textColorLink="#009688" />
 
         <RadioButton
             android:id="@+id/radioButton4"
@@ -168,7 +180,7 @@
         android:enabled="false"
         android:inputType="text"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviarWelcome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
@@ -188,7 +200,7 @@
         tools:visibility="visible" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnEnviarWelcome"
         android:layout_width="260dp"
         android:layout_height="60dp"
         android:layout_marginBottom="32dp"

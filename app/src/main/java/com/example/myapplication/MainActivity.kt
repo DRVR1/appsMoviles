@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
             val username = etUsername.text.toString()
             val password = etPassword.text.toString()
 
+            // DEPURACION (descomentar las lineas para entrar sin iniciar sesion y probar las cosas mas rapido)
+//            val intent = Intent(this, Bienvenida::class.java)
+//            intent.putExtra("username", username)
+//            startActivity(intent)
+            // FIN DEPURACION
+
             // Aquí podrías validar credenciales si querés
             //“Juan Torres” y la clave
             //"1234utn"

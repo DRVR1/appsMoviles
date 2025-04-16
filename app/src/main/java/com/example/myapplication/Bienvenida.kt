@@ -88,5 +88,10 @@ class Bienvenida : AppCompatActivity() {
             }
         }
 
+        val btnEnviarWelcome = findViewById<Button>(R.id.btnEnviarWelcome)
+        btnEnviarWelcome.setOnClickListener {
+            Toast.makeText(this, "Continuara...", Toast.LENGTH_SHORT).show()
+        }
+
     }
 }
