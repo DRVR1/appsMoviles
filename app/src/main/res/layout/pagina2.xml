@@ -105,98 +105,74 @@
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="332dp"
-        android:layout_height="255dp"
-        app:layout_constraintBottom_toTopOf="@+id/LabelEspecifique"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviarWelcome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgIos"
-        app:layout_constraintVertical_bias="1.0">
-
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="300dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="40dp"
-            android:text="Hardware"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+        app:layout_constraintVertical_bias="0.29000002">
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="300dp"
-            android:layout_height="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Programación"
             android:textColorLink="#009688" />
 
         <RadioButton
             android:id="@+id/radioButton4"
-            android:layout_width="300dp"
-            android:layout_height="42dp"
-            android:layout_marginBottom="1dp"
-            android:text="Seguridad"
-            app:layout_constraintBottom_toTopOf="@+id/radioButton5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
-            app:layout_constraintVertical_bias="0.0" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seguridad" />
 
         <RadioButton
             android:id="@+id/radioButton8"
-            android:layout_width="300dp"
-            android:layout_height="42dp"
-            android:layout_marginBottom="1dp"
-            android:text="Redes"
-            app:layout_constraintBottom_toTopOf="@+id/radioButton5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
-            app:layout_constraintVertical_bias="0.0" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redes" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hardware" />
 
         <RadioButton
             android:id="@+id/radioButton6"
-            android:layout_width="300dp"
-            android:layout_height="42dp"
-            android:layout_marginBottom="260dp"
-            android:text="Otra"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton5"
-            app:layout_constraintVertical_bias="0.0"
-            tools:layout_editor_absoluteX="55dp" />
-
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otra" />
     </RadioGroup>
+
 
     <EditText
         android:id="@+id/editTextOtra"
         android:layout_width="301dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="24dp"
         android:ems="10"
         android:enabled="false"
         android:inputType="text"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/btnEnviarWelcome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.29000002"
         tools:visibility="visible" />
 
     <TextView
         android:id="@+id/LabelEspecifique"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:text="Especifique cual:"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/editTextOtra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="1.0"
         tools:visibility="visible" />
 
     <Button
